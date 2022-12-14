@@ -4,100 +4,50 @@ const About = () => {
   return (
     <div className="container sm:px-5 md:px-10 lg:px-14">
       <div>
-        <div class="py-12 px-4 md:px-0">
-          <h2 class="font-bold text-[2.5rem]">About Me</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-x-6 gap-y-6 mt-[30px]">
-            <h2 class="after-effect after:left-44">Coming Soon</h2>
-            {/* <div>
-                  <div class="flex items-center space-x-2 mb-4 ">
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 24 24"
-                      class="text-6xl text-[#F95054]"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path fill="none" d="M0 0h24v24H0V0z"></path>
-                      <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"></path>
-                    </svg>
-                    <h4 class="text-5xl dark:text-white font-medium">
-                      Education
-                    </h4>
-                  </div>
-                  <div class="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg  dark:border-[#212425] dark:border-2">
-                    <span class="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                      2021-2023
-                    </span>
-                    <h3 class="text-xl dark:text-white">
-                      Ph.D in Horriblensess{" "}
-                    </h3>
-                    <p class="dark:text-[#b7b7b7]">
-                      ABC University, Los Angeles, CA
-                    </p>
-                  </div>
-                  <div class="py-4 pl-5 pr-3 space-y-2 rounded-lg  mb-6 dark:border-[#212425] dark:border-2">
-                    <span class="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                      2019 - Present
-                    </span>
-                    <h3 class="text-xl dark:text-white">Sr. Software Tester</h3>
-                    <p class="dark:text-[#b7b7b7]">Google Inc.</p>
-                  </div>
-                  <div class="py-4 pl-5 pr-3 space-y-2 rounded-lg  dark:border-[#212425] dark:border-2">
-                    <span class="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                      2021
-                    </span>
-                    <h3 class="text-xl dark:text-white">Best Developer </h3>
-                    <p class="dark:text-[#b7b7b7]">University Of Melbourne, NA</p>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex items-center space-x-2 mb-4 ">
-                    <svg
-                      stroke="currentColor"
-                      fill="currentColor"
-                      stroke-width="0"
-                      viewBox="0 0 24 24"
-                      class="text-6xl text-[#F95054]"
-                      height="1em"
-                      width="1em"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path fill="none" d="M0 0h24v24H0V0z"></path>
-                      <path d="M20 7h-4V5l-2-2h-4L8 5v2H4c-1.1 0-2 .9-2 2v5c0 .75.4 1.38 1 1.73V19c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2v-3.28c.59-.35 1-.99 1-1.72V9c0-1.1-.9-2-2-2zM10 5h4v2h-4V5zM4 9h16v5h-5v-3H9v3H4V9zm9 6h-2v-2h2v2zm6 4H5v-3h4v1h6v-1h4v3z"></path>
-                    </svg>
-                    <h4 class="text-5xl dark:text-white font-medium">
-                      Experience
-                    </h4>
-                  </div>
-                  <div class="py-4 pl-5 pr-3 space-y-2 mb-6 rounded-lg  dark:border-[#212425] dark:border-2">
-                    <span class="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                      2017-2021
-                    </span>
-                    <h3 class="text-xl dark:text-white">Computer Science</h3>
-                    <p class="dark:text-[#b7b7b7]">
-                      Imperialize Technical Institute
-                    </p>
-                  </div>
-                  <div class="py-4 pl-5 pr-3 space-y-2 rounded-lg  mb-6 dark:border-[#212425] dark:border-2">
-                    <span class="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                      2015-2017
-                    </span>
-                    <h3 class="text-xl dark:text-white">Cr. Web Developer</h3>
-                    <p class="dark:text-[#b7b7b7]">ib-themes ltd.</p>
-                  </div>
-                  <div class="py-4 pl-5 pr-3 space-y-2 rounded-lg  dark:border-[#212425] dark:border-2">
-                    <span class="text-tiny text-gray-lite dark:text-[#b7b7b7]">
-                      2008
-                    </span>
-                    <h3 class="text-xl dark:text-white">Best Writter</h3>
-                    <p class="dark:text-[#b7b7b7]">
-                      Online Typodev Soluation Ltd.
-                    </p>
-                  </div>
-                </div> */}
+        <div className="py-12 px-4 md:px-0">
+          <h2 className="font-bold text-[2.5rem]">About Me</h2>
+          <div class="lg:grid grid-cols-12 md:gap-10 pt-4 md:pt-[30px] items-center ">
+            <div class="col-span-12 space-y-2.5">
+              <div class="lg:mr-10">
+                <p class="text-gray-lite  dark:text-color-910 leading-7">
+                  Hi there, I'm Emon Hossain. I am a professional Mern Stack
+                  Developer . I am eager to learn new things and keep myself
+                  updated. Hard work never bothers me.{" "}
+                  <span className="font-bold italic">
+                    "Success often comes to those who embrace hard work"
+                  </span>{" "}
+                  I never give up until I finish my job. So you can work with me
+                  with full confidence.
+                  <p class="text-gray-lite leading-7 mt-2.5 dark:text-color-910">
+                    <span className="font-bold mr-1">Expert: </span> JavaScript,
+                    Es6, React, Firebase Auth, HTML, CSS, Bootstrap, Tailwind{" "}
+                  </p>
+                  <p>
+                    <span className="font-bold mr-1">Comfortable: </span>
+                    Redux, Firebase, React Router, Node js, MongoDB{" "}
+                  </p>
+                  <p>
+                    <span className="font-bold mr-1">Familiar: </span>
+                    Material UI. TypeScript, Next.js. Mongoose
+                  </p>
+                  <span className="font-bold mr-1">Deploy:</span> Vercel,
+                  Netlify, Firebase.
+                </p>
+                <p>
+                  <span className="font-bold mr-1">Tool: </span>
+                  Chrome Dev-tool, VSCode, Github.
+                </p>
+                <p class="text-gray-lite leading-7 mt-2.5 dark:text-color-910">
+                  The goal is to gain a challenging but rewarding career with an
+                  organization that provides opportunity for personal and
+                  professional growth.
+                </p>
+                <p class="thanks mt-1">
+                  Thanks a lot ....❤️
+                </p>
+              </div>
+              <div></div>
+            </div>
           </div>
         </div>
       </div>

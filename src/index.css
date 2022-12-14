@@ -12,6 +12,30 @@ h2 {
   font-family: "Roboto Slab", serif;
   font-weight: 700;
 }
+
+.work-img img {
+  height: 300px;
+  max-width: 300px;
+}
+.detail-img {
+  max-width: 600px;
+}
+h2.font-bold.text-\[2\.5rem\] {
+  background: -webkit-linear-gradient(#ad1256, #ff3434);
+  /* background: -webkit-linear-gradient(#dd2476, #fa5252); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -2px;
+}
+
+.thanks {
+  background: -webkit-linear-gradient(#ad1256, #ff3434);
+  /* background: -webkit-linear-gradient(#dd2476, #fa5252); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -21,6 +45,15 @@ h2 {
 .profile-border {
   border: 1px solid;
   border-color: rgba(242, 6, 171, 1);
+}
+
+.logo a {
+  font-size: 39px;
+  background: -webkit-linear-gradient(#ad1256, #ff3434);
+  /* background: -webkit-linear-gradient(#dd2476, #fa5252); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -3px;
 }
 
 .socialbtn {
