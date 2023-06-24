@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import profile from "../images/profile1.jpeg";
+import profile from "../../images/profile1.jpeg";
 
 const Header = () => {
   const [isActive, setActive] = useState("false");
@@ -55,9 +55,8 @@ const Header = () => {
             </span>
             {/* ================== */}
             <nav
-              className={`z-10 md:hidden flex flex-col justify-between overflow-x-hidden bg-white max-w-[305px] space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform ${
-                isActive && "-translate-x-full"
-              }  md:translate-x-0  transition duration-200 ease-in-out`}
+              className={`z-10 md:hidden flex flex-col justify-between overflow-x-hidden bg-white max-w-[305px] space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform ${isActive && "-translate-x-full"
+                }  md:translate-x-0  transition duration-200 ease-in-out`}
             >
               <div className=" mb-6 lg:mb-0  mx-auto   relative bg-white text-center dark:bg-[#111111] px-5 mt-[150px]">
                 <div>

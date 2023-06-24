@@ -1,20 +1,22 @@
 import { createBrowserRouter } from "react-router-dom";
-import About from "../components/About";
-import Blogs from "../components/Blogs";
-import Contact from "../components/Contact";
-import ErrorPage from "../components/ErrorPage";
-import Home from "../components/Home";
-import Resume from "../components/Resume";
-import Works from "../components/Works";
+
+import Blogs from "../portfolio-v2/Blogs";
+import Contact from "../portfolio-v2/Contact";
+import ErrorPage from "../portfolio-v2/ErrorPage";
+import Faq from "../portfolio-v2/Faq";
+import Home from "../portfolio-v2/Home";
+import Resume from "../portfolio-v2/Resume";
+import Works from "../portfolio-v2/Works";
+import Root from "./Root";
 const routers = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Root />,
     errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
-        element: <About />,
+        element: <Home />,
       },
       {
         path: "/resume",
@@ -29,11 +31,42 @@ const routers = createBrowserRouter([
         element: <Blogs />,
       },
       {
+        path: "/faq",
+        element: <Faq />,
+      },
+      {
         path: "/contact",
         element: <Contact />,
       },
     ],
   },
+  // {
+  //   path: "/",
+  //   element: <Home />,
+  //   errorElement: <ErrorPage />,
+  //   children: [
+  //     {
+  //       path: "/",
+  //       element: <About />,
+  //     },
+  //     {
+  //       path: "/resume",
+  //       element: <Resume />,
+  //     },
+  //     {
+  //       path: "/works",
+  //       element: <Works />,
+  //     },
+  //     {
+  //       path: "/blogs",
+  //       element: <Blogs />,
+  //     },
+  //     {
+  //       path: "/contact",
+  //       element: <Contact />,
+  //     },
+  //   ],
+  // },
 ]);
 
 export default routers;

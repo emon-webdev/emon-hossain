@@ -1,0 +1,189 @@
+.header {
+    border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+}
+
+.primary-btn {
+    display: inline-block;
+    width: 145px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Rajdhani, sans-serif;
+    color: #000 !important;
+    padding-inline: 1.25rem;
+    transition: all .3s ease;
+    background: #28dbd1 !important;
+    border: 1px solid transparent;
+    font-weight: 600;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: .9px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    color: #28dbd1 !important;
+    background: #111121 !important;
+    border-color: #28dbd1;
+    box-shadow: 0 0 10px rgba(40, 219, 209, .4);
+}
+
+.main-home {
+    position: relative;
+}
+
+.main-home::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -150px;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    --tw-content:
+        "";
+    background: url(https://devconfbd.com/images/star-bg.svg);
+    z-index: 0;
+}
+
+.header-btn {
+    display: block;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Rajdhani, sans-serif;
+    color: #000;
+    padding-inline: 1.25rem;
+    transition: all .3s ease;
+    background: #28dbd1;
+    border: 1px solid transparent;
+    font-weight: 600;
+    font-size: 18px;
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: .9px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.header-btn:hover {
+    color: #28dbd1;
+    background: transparent;
+    border-color: #28dbd1;
+    box-shadow: 0 0 10px rgba(40, 219, 209, .4);
+}
+
+
+nav ul li a:hover {
+    color: #28dbd1;
+}
+
+/* Hero area */
+.banner-area {
+    background: #111121;
+}
+
+.hero-btn .header-btn {
+    width: 145px;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.footer-area {
+    overflow: hidden;
+}
+
+img.hello-img {
+    width: 60px;
+    margin: 0 15px;
+}
+
+.contact-form input {
+    color: #fff;
+}
+
+.contact-form input.primary-btn {
+    color: #000 !important;
+}
+
+.contact-form input.primary-btn:hover {
+    color: #28dbd1 !important;
+}
+
+.footer-social ul.flex li {
+    margin: 0 6px;
+}
+
+.footer-social ul.flex li a {
+    width: 40px;
+    height: 40px;
+    transition: all .3s ease;
+    border: 1px solid rgba(40, 219, 209, .4);
+    display: inline-grid;
+    place-items: center;
+    border-radius: 5px;
+    background-color: #02121d;
+    color: #fff;
+    font-size: 1.125rem;
+    padding: 10px;
+}
+
+.footer-social ul.flex li a:hover,
+ul.about-social li a:hover {
+    background-color: #28dbd1;
+    color: #02121d;
+}
+
+ul.about-social li a {
+    width: 40px;
+    height: 40px;
+    transition: all .3s ease;
+    border: 1px solid rgba(40, 219, 209, .4);
+    display: inline-grid;
+    place-items: center;
+    border-radius: 5px;
+    background-color: #02121d;
+    color: #fff;
+    font-size: 1.125rem;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.faq-list-single-item {
+    border: 1px solid #28dbd1;
+    box-shadow: 0 0 10px rgba(40, 219, 209, .4);
+    transition: all .5s ease;
+}
+
+.faq-list-single-item .number {
+    border: 1px solid #28dbd1;
+    box-shadow: 0 0 10px rgba(40, 219, 209, .4);
+}
+
+.faq-list-single-item .content {
+    width: calc(100% - 180px);
+}
+
+.service-icon.text-center svg {
+    box-shadow: 0 0 10px rgba(40, 219, 209, .4);
+}
+
+.service_item {
+    padding: 35px 20px;
+    border: 1px solid #28dbd1;
+    box-shadow: 0 0 10px rgba(40, 219, 209, .4);
+    transition: .5s;
+
+}
+
+.banner-img img,
+.md\:basis-2\/5.w-full.image-box img {
+    border: 1px solid #28dbd1;
+    box-shadow: 0 0 10px rgba(40, 219, 209, .4);
+    border-radius: 6px;
+}
+
+.service_item:hover {
+    background: #111121;
+}

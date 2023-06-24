@@ -1,15 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto+Slab:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Rajdhani', sans-serif;
+  color: #fff;
 }
+
 h2 {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Rajdhani', sans-serif;
   font-weight: 700;
 }
 
@@ -17,9 +20,11 @@ h2 {
   height: 300px;
   max-width: 300px;
 }
+
 .detail-img {
   max-width: 600px;
 }
+
 h2.font-bold.text-\[2\.5rem\] {
   background: -webkit-linear-gradient(#ad1256, #ff3434);
   /* background: -webkit-linear-gradient(#dd2476, #fa5252); */
@@ -97,6 +102,8 @@ ul a.active {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  position: relative;
+  z-index: 9;
 }
 
 /* Tablet Medium Device :768px. */
@@ -113,6 +120,15 @@ ul a.active {
   .container {
     padding-left: 15px;
     padding-right: 15px;
+    position: inherit;
+  }
+
+  .section-title img {
+    width: 140px;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
   }
 }
 
@@ -121,5 +137,13 @@ ul a.active {
   .container {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .section-title img {
+    width: 140px;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
   }
 }
