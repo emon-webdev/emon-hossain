@@ -1,5 +1,6 @@
+import { Progress } from '@chakra-ui/react';
 import React from 'react';
-import { AiFillHtml5, AiOutlineConsoleSql } from 'react-icons/ai';
+import { AiFillHtml5 } from 'react-icons/ai';
 import { BiLogoAws, BiLogoBootstrap, BiLogoCss3, BiLogoDocker, BiLogoJavascript, BiLogoMongodb, BiLogoNodejs, BiLogoPostgresql, BiLogoReact, BiLogoRedux, BiLogoTailwindCss, BiLogoTypescript } from 'react-icons/bi';
 import express from '../images/express.svg';
 import titleImg from '../images/header.svg';
@@ -15,7 +16,7 @@ const Skills = () => {
                     <img className="w-[200px] mx-auto" src={titleImg} alt="" />
                 </div>
                 <div className="skills-wrap md:flex items-center mb-8">
-                    <div className="skills-lang basis-6/12 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
+                    <div className="skills-lang md:mr-8 md:basis-6/12 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
                         <p className='text-[#e34c26]'>
                             <AiFillHtml5 />
                         </p>
@@ -68,17 +69,36 @@ const Skills = () => {
                         <p className='text-[#336791]'>
                             <BiLogoPostgresql />
                         </p>
-                        <p className='text-[#F29111]'>
+                        {/* <p className='text-[#F29111]'>
                             <AiOutlineConsoleSql />
-                        </p>
+                        </p> */}
                     </div>
-                    <div className="skills-content basis-6/12">
-                        <div class="skill-progress-single-item">
-                            <span class="text-white">Communication</span>
-                            <div class="skill-box">
-                                <div class="progress-line" data-width="75" style={{ width: "75%" }}>
-                                    <span class="skill-percentage">75%</span>
-                                </div>
+                    <div className="skills-content mt-8 md:mt-0 md:basis-6/12">
+                        <div class="skill-progress rounded mb-5 py-[40px] px-[35px] bg-[#0a1f2f]">
+                            <div className='flex items-center justify-between'>
+                                <p class="text-white">Teamwork</p>
+                                <p class="text-white">90%</p>
+                            </div>
+                            <div class="skill-box rounded mt-4">
+                                <Progress colorScheme='blue' size='lg' value={90} />
+                            </div>
+                        </div>
+                        <div class="skill-progress rounded mb-5 py-[40px] px-[35px] bg-[#0a1f2f]">
+                            <div className='flex items-center justify-between'>
+                                <p class="text-white">Communication</p>
+                                <p class="text-white">75%</p>
+                            </div>
+                            <div class="skill-box rounded mt-4">
+                                <Progress colorScheme='blue' size='lg' value={75} />
+                            </div>
+                        </div>
+                        <div class="skill-progress rounded py-[40px] px-[35px] bg-[#0a1f2f]">
+                            <div className='flex items-center justify-between'>
+                                <p class="text-white">Flexibility</p>
+                                <p class="text-white">85%</p>
+                            </div>
+                            <div class="skill-box rounded mt-4">
+                                <Progress colorScheme='blue' size='lg' value={85} />
                             </div>
                         </div>
                     </div>

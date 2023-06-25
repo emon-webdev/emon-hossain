@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import profile from "../../images/profile1";
+import logo from "../images/mainLogo.png";
 import Navbar from './Navbar';
 
 const Header = () => {
@@ -16,10 +16,10 @@ const Header = () => {
         <div className="header py-5 bg-[#111121]">
             <div className="container">
                 <div className="flex justify-between items-center">
-                    <div className="logo">
-                        <Link to="/" className="text-3xl font-bold text-[#f206ab]">
-                            <img src="	https://torkgo.vercel.app/images/logo/logo.png" alt="" srcset="" />
-
+                    <div className="logo ">
+                        <Link to="/" className="text-3xl font-bold flex items-center">
+                            <img src={logo} alt="" srcset="" />
+                            <span className=" md:text-[36px] text-[26px] font-bold tracking-tighter text-[#fff] ">Emon<span className="text-[#28dbd1]">Hossain</span></span>
                         </Link>
                     </div>
                     {/* desktop menu */}
@@ -28,7 +28,7 @@ const Header = () => {
                     </div>
                     {/* mobile menu */}
                     <div className="md:hidden flex flex-wrap items-center">
-                        <span className="bg-white w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] rounded-full flex justify-center items-center hover:bg-[#ef4060] text-black hover:text-white transition-all duration-300 ease-in-out cursor-pointer  ">
+                        {/* <span className="bg-white w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] rounded-full flex justify-center items-center hover:bg-[#ef4060] text-black hover:text-white transition-all duration-300 ease-in-out cursor-pointer  ">
                             <svg
                                 stroke="currentColor"
                                 fill="none"
@@ -43,10 +43,10 @@ const Header = () => {
                             >
                                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                             </svg>
-                        </span>
+                        </span> */}
                         <span
                             onClick={handleToggle}
-                            className="md:hidden bg-[#ef4060] flex w-[40px] h-[40px] rounded-full  justify-center items-center text-white dark:text-white text-3xl ml-3 "
+                            className="md:hidden bg-[#28dbd1] flex w-[40px] h-[40px] rounded-full  justify-center items-center text-black dark:text-white text-3xl ml-3 "
                         >
                             <svg
                                 stroke="currentColor"
@@ -65,14 +65,8 @@ const Header = () => {
                             className={`z-10 md:hidden flex flex-col justify-between overflow-x-hidden bg-white max-w-[305px] space-y-6 px-2 py-4 absolute inset-y-0 left-0 transform ${isActive && "-translate-x-full"
                                 }  md:translate-x-0  transition duration-200 ease-in-out`}
                         >
-                            <div className=" mb-6 lg:mb-0  mx-auto   relative bg-white text-center dark:bg-[#111111] px-5 mt-[150px]">
-                                <div>
-                                    {/* <img
-                                        src={profile}
-                                        className="w-[140px] absolute left-[50%] transform -translate-x-[50%] h-[140px] drop-shadow-xl mx-auto profile-border  rounded-[20px] -mt-[140px]"
-                                        alt="Emon Hossain"
-                                    /> */}
-                                </div>
+                            <div className=" mb-6 lg:mb-0  mx-auto   relative bg-white text-center dark:bg-[#111111] px-5 ">
+
                                 <div className=" pb-8">
                                     <h1 className="mt-3 mb-1 text-[1.625rem] font-semibold  dark:text-white">
                                         Emon Hossain
@@ -88,15 +82,27 @@ const Header = () => {
                                                     to="/"
                                                     className=" border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5 rounded-md     cursor-pointer  transition-colors duration-300 ease-in-out  font-poppins   text-gray-lite font-medium   flex text-xtiny py-2.5 md:px-4 xl:px-5 items-center   text-[#FA5252]  hover:text-[#FA5252] "
                                                 >
-                                                    About
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link
-                                                    to="/resume"
-                                                    className=" border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5 rounded-md     cursor-pointer  transition-colors duration-300 ease-in-out  font-poppins   text-gray-lite font-medium   flex text-xtiny py-2.5 md:px-4 xl:px-5 items-center   dark:text-white dark:hover:text-[#FA5252]  hover:text-[#FA5252]  "
-                                                >
-                                                    Resume
+                                                    <span className="mr-2 text-xl">
+                                                        <svg
+                                                            stroke="currentColor"
+                                                            fill="none"
+                                                            strokeWidth="2"
+                                                            viewBox="0 0 24 24"
+                                                            strokeLinecap="round"
+                                                            strokeLinejoin="round"
+                                                            height="1em"
+                                                            width="1em"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                        >
+                                                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                                            <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                                                            <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                                                            <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                                                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                                        </svg>
+                                                    </span>{" "}
+                                                    Home
                                                 </Link>
                                             </li>
                                             <li>
@@ -129,7 +135,7 @@ const Header = () => {
                                             </li>
                                             <li>
                                                 <Link
-                                                    to="/blogs"
+                                                    to="/faq"
                                                     className=" border-b border-[#E3E3E3] dark:border-[#3D3A3A] pb-2.5 rounded-md     cursor-pointer  transition-colors duration-300 ease-in-out  font-poppins   text-gray-lite font-medium   flex text-xtiny py-2.5 md:px-4 xl:px-5 items-center   dark:text-white dark:hover:text-[#FA5252]  hover:text-[#FA5252]  "
                                                 >
                                                     <span className="mr-2 text-xl">
@@ -137,17 +143,21 @@ const Header = () => {
                                                             stroke="currentColor"
                                                             fill="currentColor"
                                                             strokeWidth="0"
-                                                            viewBox="0 0 448 512"
+                                                            viewBox="0 0 24 24"
                                                             height="1em"
                                                             width="1em"
                                                             xmlns="http://www.w3.org/2000/svg"
                                                         >
-                                                            <path d="M162.4 196c4.8-4.9 6.2-5.1 36.4-5.1 27.2 0 28.1.1 32.1 2.1 5.8 2.9 8.3 7 8.3 13.6 0 5.9-2.4 10-7.6 13.4-2.8 1.8-4.5 1.9-31.1 2.1-16.4.1-29.5-.2-31.5-.8-10.3-2.9-14.1-17.7-6.6-25.3zm61.4 94.5c-53.9 0-55.8.2-60.2 4.1-3.5 3.1-5.7 9.4-5.1 13.9.7 4.7 4.8 10.1 9.2 12 2.2 1 14.1 1.7 56.3 1.2l47.9-.6 9.2-1.5c9-5.1 10.5-17.4 3.1-24.4-5.3-4.7-5-4.7-60.4-4.7zm223.4 130.1c-3.5 28.4-23 50.4-51.1 57.5-7.2 1.8-9.7 1.9-172.9 1.8-157.8 0-165.9-.1-172-1.8-8.4-2.2-15.6-5.5-22.3-10-5.6-3.8-13.9-11.8-17-16.4-3.8-5.6-8.2-15.3-10-22C.1 423 0 420.3 0 256.3 0 93.2 0 89.7 1.8 82.6 8.1 57.9 27.7 39 53 33.4c7.3-1.6 332.1-1.9 340-.3 21.2 4.3 37.9 17.1 47.6 36.4 7.7 15.3 7-1.5 7.3 180.6.2 115.8 0 164.5-.7 170.5zm-85.4-185.2c-1.1-5-4.2-9.6-7.7-11.5-1.1-.6-8-1.3-15.5-1.7-12.4-.6-13.8-.8-17.8-3.1-6.2-3.6-7.9-7.6-8-18.3 0-20.4-8.5-39.4-25.3-56.5-12-12.2-25.3-20.5-40.6-25.1-3.6-1.1-11.8-1.5-39.2-1.8-42.9-.5-52.5.4-67.1 6.2-27 10.7-46.3 33.4-53.4 62.4-1.3 5.4-1.6 14.2-1.9 64.3-.4 62.8 0 72.1 4 84.5 9.7 30.7 37.1 53.4 64.6 58.4 9.2 1.7 122.2 2.1 133.7.5 20.1-2.7 35.9-10.8 50.7-25.9 10.7-10.9 17.4-22.8 21.8-38.5 3.2-10.9 2.9-88.4 1.7-93.9z"></path>
+                                                            <g>
+                                                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                                                <path d="M3 2h16.005C20.107 2 21 2.898 21 3.99v16.02c0 1.099-.893 1.99-1.995 1.99H3V2zm4 2H5v16h2V4zm2 16h10V4H9v16zm2-4a3 3 0 0 1 6 0h-6zm3-4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm8-6h2v4h-2V6zm0 6h2v4h-2v-4z"></path>
+                                                            </g>
                                                         </svg>
                                                     </span>{" "}
-                                                    Blogs
+                                                    Faq
                                                 </Link>
                                             </li>
+
                                             <li>
                                                 <Link
                                                     to="/contact"
@@ -172,7 +182,7 @@ const Header = () => {
                                                     Contact
                                                 </Link>
                                             </li>
-                                            <span className="bg-white text-black hover:text-white w-[40px] hidden  h-[40px] rounded-full lg:flex justify-center items-center  hover:bg-[#ef4060] transition-all duration-300 ease-in-out cursor-pointer ">
+                                            <span className="bg-white text-black hover:text-white w-[40px] hidden  h-[40px] rounded-full lg:flex justify-center items-center  hover:bg-[#28dbd1] transition-all duration-300 ease-in-out cursor-pointer ">
                                                 <svg
                                                     stroke="currentColor"
                                                     fill="none"

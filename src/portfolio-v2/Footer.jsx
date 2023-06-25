@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import footerBg from '../images/footer-bg.png';
+import logo from "../images/mainLogo.png";
 const Footer = () => {
     return (
         <div
@@ -16,9 +17,11 @@ const Footer = () => {
                 <div className="footer-wrap py-11 ">
                     <div className="footer-img text-center">
                         <Link to="/" className="text-3xl font-bold text-[#f206ab]">
-                            <img className='mx-auto' src="https://torkgo.vercel.app/images/logo/logo.png" alt="" srcset="" />
-
+                            <img className='mx-auto' src={logo} alt="" srcset="" />
                         </Link>
+                        <p>
+                            <span className=" text-[36px] font-bold tracking-tighter text-[#fff] ">Emon <span className="text-[#28dbd1]">Hossain</span></span>
+                        </p>
                     </div>
                     <div className="footer-social mt-9">
                         <ul className='flex items-center justify-center'>

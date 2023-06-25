@@ -196,3 +196,75 @@ ul.about-social li a {
     border: 1px solid #28dbd1;
     box-shadow: 0 0 10px rgba(40, 219, 209, .4);
 }
+
+.skills-lang p img {
+    filter: invert(100%) sepia(16%) saturate(7463%) hue-rotate(222deg) brightness(119%) contrast(115%);
+}
+
+.skill-box .css-1jrtelv {
+    background: #28dbd1;
+}
+
+.chakra-tabs__tablist.projects-tab-list.css-1xhq01z {
+    text-align: center;
+    justify-content: center;
+    /* border-bottom: 1px solid #fff !important; */
+    border-bottom: none;
+    margin-bottom: 50px;
+}
+
+.chakra-tabs__tablist.projects-tab-list .css-52dxnr {
+    color: #fff;
+}
+
+.chakra-tabs__tablist.projects-tab-list .css-52dxnr[aria-selected=true],
+.css-52dxnr[data-selected] {
+    color: #28dbd1;
+    border-color: #28dbd1;
+}
+
+.project-img img {
+    border: 2px solid #28dbd1;
+    box-shadow: 0 0 10px rgba(40, 219, 209, .4);
+}
+
+.project-btn .primary-btn {
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    letter-spacing: 0;
+    color: #28dbd1 !important;
+    background: #111121 !important;
+    border-color: #28dbd1;
+    box-shadow: 0 0 10px rgba(40, 219, 209, .4);
+}
+
+.project-btn .primary-btn:hover {
+    background: #28dbd1 !important;
+    border: 1px solid transparent;
+    color: #000 !important;
+}
+
+li.flex.items-center.p-0.m-0 {
+    list-style: none;
+}
+
+
+.single-project {
+    border-color: #28dbd1;
+    box-shadow: 0 0 10px rgba(40, 219, 209, .4);
+    border: 6px;
+    transition: .5x;
+}
+
+.single-project:hover {
+    background: #111121;
+}
+
+div.chakra-tabs__tab-panel {
+    /* border-color: #28dbd1;
+    box-shadow: 0 0 10px rgba(40, 219, 209, .4); */
+    border: 6px;
+    padding: 0;
+}
