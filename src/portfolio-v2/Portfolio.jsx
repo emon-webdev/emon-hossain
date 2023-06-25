@@ -1,3 +1,4 @@
+import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@chakra-ui/react';
 import React from 'react';
 import titleImg from '../images/header.svg';
 const Portfolio = () => {
@@ -10,8 +11,26 @@ const Portfolio = () => {
                     </h2>
                     <img className="w-[200px] mx-auto" src={titleImg} alt="" />
                 </div>
-                <div className="skills-wrap">
+                <div className="portfolio-projects">
+                    <Tabs>
+                        <TabList>
+                            <Tab>One</Tab>
+                            <Tab>Two</Tab>
+                            <Tab>Three</Tab>
+                        </TabList>
 
+                        <TabPanels>
+                            <TabPanel>
+                                <p>one!</p>
+                            </TabPanel>
+                            <TabPanel>
+                                <p>two!</p>
+                            </TabPanel>
+                            <TabPanel>
+                                <p>three!</p>
+                            </TabPanel>
+                        </TabPanels>
+                    </Tabs>
                 </div>
             </div>
         </div>
