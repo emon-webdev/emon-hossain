@@ -23,9 +23,14 @@ const Home = () => {
       </div>
       <div className="main-home">
         <Services />
+      </div>
+      <div className="main-home">
         <Portfolio />
+      </div>
+      <div className="main-home">
         <HomeContact />
       </div>
+
     </div>
   );
 };

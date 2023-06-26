@@ -8,7 +8,9 @@ const Works = () => {
 
       <DynamicBanner title='Projects' />
       {/* projects */}
-      <Portfolio />
+      <div className="main-home">
+        <Portfolio />
+      </div>
     </>
   );
 };

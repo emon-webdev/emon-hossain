@@ -130,6 +130,11 @@ ul a.active {
   .section-title h2 {
     font-size: 36px;
   }
+
+  .faq-list-single-item .content {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* Large Mobile :480px. */
