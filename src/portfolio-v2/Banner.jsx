@@ -22,7 +22,7 @@ const Banner = () => {
                                 I'm
                             </h2>
                             <h1 className='md:text-[60px] text-[36px] mb-4 leading-normal font-bold tracking-[2px] text-[#fff] '>Emon Hossain <span className='text-base'>as </span> </h1>
-                            <p className='text-xl mb-10  text-[#fff] '>a professional MERN Stack Developer | Frontend Web Developer | React Developer.  I love to explore new technologies. </p>
+                            <p className='text-xl mb-10  text-[#fff] '>a professional MERN Stack Developer | Frontend Developer | React Developer | WordPress Developer.  I love to explore new technologies. </p>
                             <div className="hero-btn text-center">
                                 <a
                                     href="https://drive.google.com/file/d/1DgfPMEYiOOZtWiNrLDSvI8jXAmYWY_6Y/view"
