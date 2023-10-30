@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import Blogs from "../portfolio-v2/Blogs";
+import Blog from "../portfolio-v2/Blog";
 import Contact from "../portfolio-v2/Contact";
 import ErrorPage from "../portfolio-v2/ErrorPage";
 import Faq from "../portfolio-v2/Faq";
@@ -28,7 +28,7 @@ const routers = createBrowserRouter([
       },
       {
         path: "/blogs",
-        element: <Blogs />,
+        element: <Blog />,
       },
       {
         path: "/faq",

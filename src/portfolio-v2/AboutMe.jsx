@@ -12,7 +12,9 @@ const AboutMe = () => {
                         <div class="flex title-icon-box justify-between mb-5">
                             <div>
                                 <div className="section-title text-center">
-                                    <h2 className="font-bold text-[3rem] tracking-wider mb-2 text-white">
+                                    <h2
+                                        data-aos="fade-left"
+                                        className="font-bold text-[3rem] tracking-wider mb-2 text-white">
                                         About Me
                                     </h2>
                                     <img className="w-[200px] mx-auto" src={titleImg} alt="" />

@@ -201,6 +201,7 @@ ul.about-social li a {
   border: 1px solid #28dbd1;
   box-shadow: 0 0 10px rgba(40, 219, 209, 0.4);
   transition: 0.5s;
+  height: 340px;
 }
 
 .banner-img img,
@@ -212,6 +213,7 @@ ul.about-social li a {
 
 .service_item:hover {
   background: #111121;
+  box-shadow: 0 0 20px rgba(40, 219, 209, 0.4);
 }
 
 .skills-lang p {
@@ -304,4 +306,26 @@ div.chakra-tabs__tab-panel {
   .sticky-nav {
     display: none !important;
   }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: transparent;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

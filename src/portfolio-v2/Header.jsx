@@ -93,7 +93,10 @@ const Header = () => {
             <div className={`md:navbar ${stickyClass} header-main py-4 md:py-5 bg-[#111121]`}>
                 <div className="container">
                     <div className="flex w-[100%] justify-between items-center">
-                        <div className="logo ">
+                        <div
+                            data-aos="zoom-in"
+                            data-aos-duration="500"
+                            className="logo ">
                             <Link to="/" className="text-3xl font-bold flex items-center">
                                 <img src={logo} alt="" srcset="" />
                                 <span className=" md:text-[36px] text-[26px] font-bold tracking-tighter text-[#fff] ">Emon<span className="text-[#28dbd1]">Hossain</span></span>

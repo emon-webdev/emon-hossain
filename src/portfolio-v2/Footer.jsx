@@ -15,7 +15,10 @@ const Footer = () => {
         >
             <div className="container">
                 <div className="footer-wrap py-11 ">
-                    <div className="footer-img text-center">
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-duration="2000"
+                        className="footer-img text-center">
                         <Link to="/" className="text-3xl font-bold text-[#f206ab]">
                             <img className='mx-auto' src={logo} alt="" srcset="" />
                         </Link>

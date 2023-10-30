@@ -1,6 +1,7 @@
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineCheckCircle } from "react-icons/ai";
+import cakeStand from "../images/cakeStand.png";
 import capitalTrust from "../images/capitalTrust.png";
 import carRelsel from "../images/carRelsel.png";
 import clean from "../images/clean.png";
@@ -20,7 +21,9 @@ const Portfolio = () => {
     <div className="portfolio-area bg-[#111121] py-16">
       <div className="container">
         <div className="section-title text-center mb-16">
-          <h2 className="font-bold text-[3rem] tracking-wider text-white">
+          <h2
+            data-aos="fade-right"
+            className="font-bold text-[3rem] tracking-wider text-white">
             Latest Works
           </h2>
           <img className="w-[200px] mx-auto" src={titleImg} alt="" />
@@ -86,7 +89,7 @@ const Portfolio = () => {
                           <AiOutlineCheckCircle className="text-2xl mr-3 text-[#28dbd1]" />
                         </span>
                         <span>
-                          Technology: React, React Router, Tailwind, MongoDB,
+                          Technology: React, Redux-Toolkit, React Router, Tailwind, MongoDB,
                           Express.js, Node.js, Private route, Firebase
                           Authentication, etc
                         </span>
@@ -120,6 +123,89 @@ const Portfolio = () => {
                     </ul>
                   </div>
                 </div>
+                <div className="single-project md:flex mb-7  p-6 rounded bg-[#0a1f2f]">
+                  <div className="project-img md:basis-6/12">
+                    <img
+                      className="max-h-[370px] w-[400px] rounded"
+                      src={cakeStand}
+                      alt=""
+                      srcset=""
+                    />
+                  </div>
+                  <div className="project-content pt-3 my-4 md:my-0 md:basis-6/12 md:ml-8">
+                    <ul>
+                      <h2 className="text-white text-2xl font-bold">
+                        The Cake Stand
+                      </h2>
+                      <p className="text-white text-sm mb-5  font-semibold">
+                        Restaurants Website || Reservation  || Admin Home || User Home
+                      </p>
+                      <li className="flex items-center text-white mb-4">
+                        <span>
+                          <AiOutlineCheckCircle className="text-2xl mr-3 text-[#28dbd1]" />
+                        </span>
+                        <span>
+                          This is a full-stack Restaurants Website website.
+                        </span>
+                      </li>
+                      <li className="flex items-center text-white mb-4">
+                        <span>
+                          <AiOutlineCheckCircle className="text-2xl mr-3 text-[#28dbd1]" />
+                        </span>
+                        <span>
+                          Users need to login via Google (also can create a new
+                          Account).
+                        </span>
+                      </li>
+                      <li className="flex items-center text-white mb-4">
+                        <span>
+                          <AiOutlineCheckCircle className="text-2xl mr-3 text-[#28dbd1]" />
+                        </span>
+                        <span>
+                          Have an Admin , User, User dashboard, Admin dashboard, Admin
+                          can delete, add, manage products etc...
+                        </span>
+                      </li>
+                      <li className="flex items-center text-white mb-4">
+                        <span>
+                          <AiOutlineCheckCircle className="text-2xl mr-3 text-[#28dbd1]" />
+                        </span>
+                        <span>
+                          Technology: React, Redux-Toolkit, Tailwind, MongoDB, Mongoose,
+                          Express.js, Node.js, Private route, 2 Type Role, Firebase
+                          Authentication, etc
+                        </span>
+                      </li>
+                      <div className="project-btn flex flex-wrap gap-4">
+                        <a
+                          className="primary-btn"
+                          href="https://the-cake-stand.web.app/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          live link
+                        </a>
+                        <a
+                          className="primary-btn"
+                          href="https://github.com/emon-webdev/the-cake-stand"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Client Code
+                        </a>
+                        <a
+                          className="primary-btn"
+                          href="https://github.com/emon-webdev/The-Cake-Stand-Server"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Server Code
+                        </a>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+
                 <div className="single-project md:flex mb-7  p-6 rounded bg-[#0a1f2f]">
                   <div className="project-img md:basis-6/12">
                     <img
@@ -174,7 +260,7 @@ const Portfolio = () => {
                       <div className="project-btn flex flex-wrap gap-4">
                         <a
                           className="primary-btn"
-                          href="https://car-showroom-app.netlify.app/"
+                          href="https://car-resell-web.web.app/"
                           target="_blank"
                           rel="noopener noreferrer"
                         >

@@ -15,7 +15,9 @@ const Banner = () => {
             >
                 <div className="container">
                     <div className="banner-wrapper h-[600px] md:h-[800px] flex items-center justify-between">
-                        <div className="banner-content md:basis-7/12">
+                        <div
+                            data-aos="fade-right"
+                            className="banner-content md:basis-7/12">
                             <h2 className='md:text-[50px] text-[36px] font-semibold flex items-center text-[#fff] '>
                                 Hello
                                 <img className='hello-img' src={hello} alt="" srcset="" />
@@ -34,7 +36,9 @@ const Banner = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className="banner-img md:basis-4/12 hidden md:block">
+                        <div
+                            data-aos="fade-left"
+                            className="banner-img md:basis-4/12 hidden md:block">
                             <img src='https://i.ibb.co/xXbjRdh/Emon-Hossain.jpg' alt="" srcset="" />
                         </div>
                     </div>

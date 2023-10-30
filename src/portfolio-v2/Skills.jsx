@@ -10,7 +10,9 @@ const Skills = () => {
         <div className='skills-area bg-[#111121] py-16'>
             <div className="container">
                 <div className="section-title text-center mb-16">
-                    <h2 className="font-bold text-[3rem] tracking-wider text-white">
+                    <h2
+                    data-aos="fade-right"
+                    className="font-bold text-[3rem] tracking-wider text-white">
                         My Skills
                     </h2>
                     <img className="w-[200px] mx-auto" src={titleImg} alt="" />

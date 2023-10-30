@@ -32,8 +32,12 @@ const Contact = () => {
       <div className=" bg-[#0a1f2f]">
         <div className="container sm:px-5 md:px-10 lg:px-14">
           <div className="py-12 ">
-            <div className="section-title text-center">
-              <h2 className="font-bold text-[3rem] text-white">
+            <div
+
+              className="section-title text-center">
+              <h2
+                data-aos="fade-right"
+                className="font-bold text-[3rem] text-white">
                 Get In Touch
               </h2>
               <img className="w-[200px] mx-auto" src={titleImg} alt="" />

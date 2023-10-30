@@ -37,6 +37,14 @@ const Navbar = () => {
                     </li>
                     <li>
                         <Link
+                            to="/blogs"
+                            className=" text-[#fff] font-medium ml-3 py-[15px] px-[20px] text-[18px] "
+                        >
+                            Blogs
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
                             to="/contact"
                             className=" text-[#fff] font-medium ml-3 py-[15px] px-[20px] text-[18px] "
                         >
