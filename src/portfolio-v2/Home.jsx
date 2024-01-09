@@ -5,10 +5,10 @@ import HomeContact from "./HomeContact";
 import Portfolio from "./Portfolio";
 import Services from "./Services";
 import Skills from "./Skills";
+import SocialMedia from "./components/SocialMedia";
 const Home = () => {
   return (
     <div
-
     // style={{
     //   backgroundImage: `url(${StarBg})`,
     //   backgroundPosition: "center",
@@ -16,6 +16,7 @@ const Home = () => {
     //   backgroundRepeat: "no-repeat",
     // }}
     >
+      <SocialMedia />
       <HeroArea />
       <div className="main-home">
         <AboutMe />
